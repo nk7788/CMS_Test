@@ -1,4 +1,0 @@
-backend:
-  name: github
-  repo: nk7788/CMS_test # Path to Github repository
-  branch: master # Branch to update
