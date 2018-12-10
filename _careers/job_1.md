@@ -1,6 +1,6 @@
 ---
 job_id: 1
-position_name: Agile Project Manager/Coach
+title: Agile Project Manager/Coach
 location: 'Brussels, Belgium'
 position_description: >-
   The client is transitioning all of their internal projects to he Agile
