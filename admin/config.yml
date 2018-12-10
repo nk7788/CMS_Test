@@ -11,13 +11,12 @@ media_folder: "assets/img/uploads" # Media files will be stored in the repo unde
 
 collections:
   - name: "jobs" # Used in routes, e.g., /admin/collections/blog
-    title: "Jobs"
     label: "Jobs" # Used in the UI
     folder: "_careers" # The path to the folder where the documents are stored
-    identifier_field: name
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Job ID", name: "job_id", widget: "number"}
       - {label: "Position Name", name: "position_name", widget: "string"}
       - {label: "Location", name: "location", widget: "string"}
