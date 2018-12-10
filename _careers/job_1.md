@@ -1,7 +1,7 @@
 ---
 job_id: 1
 position_name: Agile Project Manager/Coach
-location: 'Paris, France'
+location: 'Brussels, Belgium'
 position_description: >-
   The client is transitioning all of their internal projects to he Agile
   Methodology, and therefore needs an Agile certified Project Manager with a
