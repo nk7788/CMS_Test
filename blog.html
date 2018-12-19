@@ -1,0 +1,43 @@
+---
+layout: default
+title: Blog
+---
+
+<!-- Header -->
+<header class="header text-center text-white bg-royal-blue">
+        <div class="container">
+  
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+  
+              <h1>Latest Blog Posts</h1>
+              <p class="lead-2 opacity-90 mt-6">Read and get updated on how we progress</p>
+  
+            </div>
+          </div>
+  
+        </div>
+      </header>
+
+<!-- Content -->
+<section class="section bg-royal-blue">
+    <div class="container">
+
+        <div class="row gap-y">
+
+            {% for post in site.posts %}
+            <div class="col-md-6 col-lg-4">
+                <div class="card d-block border hover-shadow-6 mb-6">
+                    <img class="card-img-top" src="{{ post.image_path }}">
+                    <div class="p-6 text-center">
+                            <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400">{{ post.categories }}</a></p>
+                            <h4 class="mb-0"><a class="text-blue" href="{{ post.url }}">{{ post.title }}</a></h4>
+                            <div class="p-4 text-center">
+                                    <h6 class="mb-0"><a class="text-light">{{ post.excerpt }}</a></h6>
+                            </div>
+                          </div>
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+</section>
