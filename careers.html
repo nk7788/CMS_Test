@@ -134,23 +134,23 @@ title: Careers
 
       <div class="accordion accordion-connected shadow-5" id="accordion-job">
 
-          {% for careers_item in site.careers %}
+          {% for jobslist_item in site.jobslist %}
 
         <div class="card">
           <h6 class="card-title-blue">
             <a class="d-flex align-items-center collapsed" data-toggle="collapse" href="#collapse-job-{{ careers_item.job_id }}">
-              <strong class="mr-auto">{{ careers_item.title }}</strong>
-              <span class="small text-lighter">{{ careers_item.location }}<i class="fa fa-map-marker ml-2"></i></span>
+              <strong class="mr-auto">{{ jobslist_item.title }}</strong>
+              <span class="small text-lighter">{{ jobslist_item.location }}<i class="fa fa-map-marker ml-2"></i></span>
             </a>
           </h6>
 
-          <div id="collapse-job-{{ careers_item.job_id }}" class="collapse" data-parent="#accordion-job">
+          <div id="collapse-job-{{ jobslist_item.job_id }}" class="collapse" data-parent="#accordion-job">
             <div class="card-body">
-              <p>{{ careers_item.position_description }}</p>
+              <p>{{ jobslist_item.position_description }}</p>
 
               <hr class="w-100px">
 
-              <p class="text-center"><a class="btn btn-lg btn-thaleria" href="{{ careers_item.link }}" target="_blank">Find
+              <p class="text-center"><a class="btn btn-lg btn-thaleria" href="{{ jobslist_item.link }}" target="_blank">Find
                   out more</a></p>
             </div>
           </div>
